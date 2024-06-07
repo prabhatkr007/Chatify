@@ -1,7 +1,5 @@
 import http from 'http'
 import socketServices from './services/socket.js'
-import dotenv from 'dotenv'
-dotenv.config({ path: './.env' });
 import{startConsumeMessage} from './services/kafka.js'
 
 const socketService = new socketServices()
