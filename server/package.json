@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "ioredis": "^5.4.1",
+    "kafkajs": "^2.2.4",
     "socket.io": "^4.7.5"
   }
 }
