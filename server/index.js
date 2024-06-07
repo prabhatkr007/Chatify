@@ -2,6 +2,7 @@ import http from 'http'
 import socketServices from './services/socket.js'
 import dotenv from 'dotenv'
 dotenv.config({ path: './.env' });
+import{startConsumeMessage} from './services/kafka.js'
 
 const socketService = new socketServices()
 
@@ -9,6 +10,7 @@ const httpServer = http.createServer()
 
 socketService.io.attach(httpServer)
 socketService.initListners()
+startConsumeMessage()
 
 const PORT = process.env.PORT ||8000
 httpServer.listen(PORT, () => {
