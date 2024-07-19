@@ -4,4 +4,4 @@ while leveraging Kafka to streamline the process of writing messages to the data
 avoiding the need for individual write operations.
 
 ## Architecture
-![Architecture](https://i.imgur.com/DK6g5Ge.png)
+![Architecture](https://i.imgur.com/E1jri36.png)
